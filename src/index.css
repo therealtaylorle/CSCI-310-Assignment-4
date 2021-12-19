@@ -1,1 +1,84 @@
-
+:root {
+    --primary:  #ab21ce;
+    --secondary:  #800080;
+    --dark:  #a3a2a2;
+    --light:  rgb(0, 0, 0);
+  }
+  
+  *{
+    margin:  0;
+    padding: 0;
+    box-sizing:  border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  body {
+    background-color: var(--light);
+  }
+  
+  .App{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  
+  .calculator {
+    width:  100%;
+    max-width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius:  16px;
+    box-shadow: 0px 2px 64px rgb(233, 7, 7);
+  }
+  
+  .display {
+    padding:  15px;
+    text-align: right;
+    background-color: var(--dark);
+    color:  var(--light);
+    font-size: 25px;
+    font-weight: 300;
+  }
+  
+  .display span {
+    font-size:  14px;
+    color:  #888;
+  }
+  
+  button {
+    appearance:  none;
+    border:  none;
+    outline: none;
+    color:  #FFF;
+    font-size: 20px;
+    padding: 16px;
+    cursor:  pointer;
+    transition: 0.4s;
+  }
+  
+  button:hover {
+    opacity: 100;
+    color:rgb(0, 0, 0);
+  }
+  
+  .operators {
+    display: flex;
+  }
+  
+  .operators button {
+    flex:  1 1 0%;
+    background-color: var(--primary);
+    font-weight: 10;
+  }
+  
+  .digits {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .digits button {
+    flex:  1 1 100%;
+    max-width: 33.3%;
+    background-color: var(--dark);
+  }
